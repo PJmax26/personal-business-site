@@ -1,0 +1,439 @@
+:root{
+    --purple-dark: #9926f0;
+    --purple-light: #BB6EF5;
+    --pink: #d122e3;
+    --footer: #151414;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-button{
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(var(--pink), var(--purple-dark));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--purple-light);
+    border-radius: 10px;
+}
+
+.menu{
+    background: linear-gradient(to right, var(--purple-dark), var(--pink));
+}
+
+.menu .logo{
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.menu .logo:hover{
+    color: #fff;
+}
+
+.menu li{
+    padding: 0 0.7rem;
+}
+
+.menu li a{
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.btn-rounded{
+    position: relative;
+    padding: 0.9rem 4.3rem 0.9rem 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    border: 0.1rem solid #fff;
+    background: white;
+    font-weight: 700;
+}
+
+.btn-rounded:hover{
+    background: linear-gradient(to right, var(--purple-dark), var(--pink));
+    color: white;
+}
+
+.btn-rounded:hover span{
+    background: black;
+}
+
+.btn-rounded span{
+    position: absolute;
+    background: var(--purple-dark);
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 5px;
+    border-radius: 50%;
+}
+
+.display-2{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-family: 'Gill Sans MT';
+}
+
+.intro{
+    display: inline-block;
+    font-weight: 800;
+}
+
+.description{
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: block;
+    margin-top: 1.2rem;
+}
+
+.intro-section{
+    background: linear-gradient(to right, var(--purple-dark), var(--pink));
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.heading-line::before{
+    content: ' ';
+    width: 10rem;
+    height: 0.15rem;
+    display: block;
+    background: var(--purple-dark);
+    margin: 0 auto;
+}
+
+.heading-line::after{
+    content: ' ';
+    background: var(--purple-dark);
+    width: 2rem;
+    height: 0.25rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.companies{
+    padding: 5rem 0;
+}
+
+.companies__logo-box{
+    background: white;
+    max-width: 90%;
+    height: 3rem;
+    margin-bottom: 2rem;
+    padding: .5rem;
+    text-align: center;
+    transition: .3s ease;
+}
+
+.companies__logo-box:hover{
+    transform: scale(1.1);
+}
+
+.display-3{
+    font-family: 'Gill Sans MT';
+    text-transform: capitalize;
+}
+
+.border-right{
+    border-right: .1rem solid gray;
+    height: 100%;
+}
+
+.border-custom{
+    border: .1rem solid var(--pink);
+}
+
+.services{
+    position: relative;
+    padding: 5rem 0;
+}
+
+.services .services__content{
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+.services .title{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, var(--purple-dark), var(--pink));
+    -webkit-text-fill-color: transparent;
+}
+
+.services .services__pic{
+    max-width: 100%;
+}
+
+.testimonials{
+    background: linear-gradient(to right, var(--purple-dark), var(--pink));
+    position: relative;
+    padding: 5rem 0;
+}
+
+.testimonials_card{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3rem 1.2rem;
+    border-radius: 0.625rem;
+    height: auto;
+    text-align: center;
+}
+
+.testimonials_card span{
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--purple-dark);
+}
+
+.testimonials_card .ratings span{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.testimonials_pic{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.325rem solid var(--purple-dark);
+    border-radius: 50%;
+}
+
+.testimonials_name{
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+
+.testimonials_name h3{
+    padding-top: 0.8rem;
+    text-transform: capitalize;
+}
+
+.testimonials_name p{
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.fag{
+    padding: 5rem 0;
+}
+
+.portfolio{
+    padding: 5rem 0;
+}
+
+.btn-outline-primary{
+    outline: 1px solid var(--purple-dark);
+    border: 1px solid var(--purple-dark);
+    color: var(--purple-dark);
+    text-transform: capitalize;
+}
+
+.btn-outline-primary:hover{
+    background: var(--purple-dark);
+    color: white;
+}
+
+.portfolio-box{
+    position: relative;
+    width: 100%;
+    max-height: 18.5rem;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+    border-top: .5rem solid var(--purple-dark);
+}
+
+.portfolio-box img{
+    width: 100%;
+    /* height: 100%; */
+    transition: 1s;
+}
+
+.portfolio-info{
+    background: rgb(175, 32, 236, 0.75);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s all;
+}
+
+.portfolio-info .caption{
+    color: white;
+}
+
+.portfolio-info .caption h4{
+    text-transform: uppercase;
+    display: block;
+}
+
+.portfolio-box:hover .portfolio-info{
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio-box:hover img{
+    transform: scale(1.5);
+}
+
+.cta{
+    padding: 5rem 0;
+    background: rgba(143, 142, 142, .2);
+}
+
+.gradient-background{
+    background: linear-gradient(to right, var(--purple-dark), var(--pink));
+}
+
+.cta-info{
+    padding: 3rem;
+    margin: 1rem;
+}
+
+.cta-info .brief{
+    font-size: 2rem;
+}
+
+.cta_list{
+    position: relative;
+    display: block;
+    padding-top: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.form .title{
+    background-image: linear-gradient(to right, var(--purple-dark), var(--pink));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+
+.form{
+    padding: 3rem;
+}
+
+.form button{
+    border: 0;
+    background: var(--purple-dark);
+    color: white;
+}
+
+.form button:hover{
+    background: var(--purple-dark);
+}
+
+.footer{
+    padding-top: 1rem;
+    background: var(--footer);
+}
+
+.footer .contact-box{
+    position: relative;
+}
+
+.contact-box_icon{
+    width: 4rem;
+    stroke: var(--purple-dark);
+    padding-top: 0.5rem;
+}
+
+.contact-box_info{
+    padding: .4rem;
+    font-weight: 600;
+}
+
+.contact-box_info .title{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.contact-box_info .sub-title{
+    color: rgb(79, 77, 77);
+    text-decoration: none;
+}
+
+.footer-sm .socials a img{
+    color: white;
+    width: 2rem;
+    margin-right: 2rem;
+}
+
+.company-list{
+    display: block;
+    list-style-type: none;
+    position: relative;
+}
+
+.company-list li{
+    margin-bottom: 0.5rem;
+}
+
+.company-list li a{
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+.company-list li a:hover{
+    color: var(--purple-dark);
+    padding-left: 5px;
+}
+
+.footer-bottom{
+    background: black;
+}
+
+.footer-bottom_copyright{
+    color: rgb(79, 77, 77);
+}
+
+.footer-bottom_copyright a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom_copyright a:hover{
+    color: var(--purple-dark);
+}
+
+.btn-custom{
+    background: var(--purple-dark);
+    color: white;
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    z-index: 9999;
+}

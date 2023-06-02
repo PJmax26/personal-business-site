@@ -1,0 +1,40 @@
+@media (max-width: 575px) {
+    .btn-rounded{
+        display: none;
+    }
+
+    .cta-info{
+        padding: 1rem;
+    }
+
+    .form{
+        padding: 1rem;
+    }
+
+    .contact-box_icon{
+        width: 2rem;
+    }
+
+    .contact-box_info .title{
+        font-size: 1rem;
+    }
+
+    .contact-box_info .sub-title{
+        font-size: 0.8rem;
+    }
+
+    .footer .company{
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .description{
+        font-size: 1rem;
+        display: inline-block;
+    }
+
+    .services .services__content{
+        margin-top: 1rem;
+    }
+}
